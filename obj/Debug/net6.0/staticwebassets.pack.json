@@ -3021,6 +3021,14 @@
       "PackagePath": "staticwebassets\\images\\bg-02.jpg"
     },
     {
+      "Id": "E:\\QuanLy_ShopConCung\\QuanLy_ShopConCung\\wwwroot\\images\\bg-03.jpg",
+      "PackagePath": "staticwebassets\\images\\bg-03.jpg"
+    },
+    {
+      "Id": "E:\\QuanLy_ShopConCung\\QuanLy_ShopConCung\\wwwroot\\images\\bg-04.png",
+      "PackagePath": "staticwebassets\\images\\bg-04.png"
+    },
+    {
       "Id": "E:\\QuanLy_ShopConCung\\QuanLy_ShopConCung\\wwwroot\\images\\blog-01.jpg",
       "PackagePath": "staticwebassets\\images\\blog-01.jpg"
     },
