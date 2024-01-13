@@ -10,10 +10,13 @@ namespace QuanLy_ShopConCung.Data
             : base(options)
         {
         }
-        public DbSet<Models.Product> Products { get; set; }
-        public DbSet<Models.Category> Categories { get; set; }
-        public DbSet<Models.Size> Sizes { get; set; }
-        public DbSet<Models.Brand> Brands { get; set; }
-        public DbSet<QuanLy_ShopConCung.Models.User>? User { get; set; }
+        public DbSet<Models.Product> Products { get; set;}
+        public DbSet<Models.Category> Categories { get; set;}
+        public DbSet<Models.Size> Sizes { get; set;}
+        public DbSet<Models.Brand> Brands { get; set;}
+        public DbSet<Models.Customers> Customers { get; set;}
+        public DbSet<Models.Orders> Orders { get; set;}
+        public DbSet<Models.Staffs> Staffs { get; set;}
+        public DbSet<Models.User> User { get; set;}
     }
 }

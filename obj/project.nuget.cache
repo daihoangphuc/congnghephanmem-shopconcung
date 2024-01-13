@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ea3BU+lP+vC6uaAKcVp6ymJenlbLX7fx72yMUd4/5esD0B4hYWAhXnZaUJD2U9DOSJ1SWeNmJMaonvZp4MuDxg==",
+  "dgSpecHash": "5uEv63OUQe0qvDaBsWo4l9V18C1wl7MHinqXc4ILuaZo4otCqZ7cpQb+JzeoT7e7GZ1lwqhnrMpAqO66kbiBuQ==",
   "success": true,
   "projectFilePath": "E:\\QuanLy_ShopConCung\\QuanLy_ShopConCung\\QuanLy_ShopConCung.csproj",
   "expectedPackageFiles": [
@@ -114,6 +114,7 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.net.stringtools\\17.3.2\\microsoft.net.stringtools.17.3.2.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.visualstudio.debugger.contracts\\17.2.0\\microsoft.visualstudio.debugger.contracts.17.2.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\6.0.16\\microsoft.visualstudio.web.codegeneration.6.0.16.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\6.0.16\\microsoft.visualstudio.web.codegeneration.core.6.0.16.nupkg.sha512",

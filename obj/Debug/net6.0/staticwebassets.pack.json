@@ -3173,6 +3173,14 @@
       "PackagePath": "staticwebassets\\images\\item-cart-05.jpg"
     },
     {
+      "Id": "E:\\QuanLy_ShopConCung\\QuanLy_ShopConCung\\wwwroot\\images\\logo (Custom).png",
+      "PackagePath": "staticwebassets\\images\\logo (Custom).png"
+    },
+    {
+      "Id": "E:\\QuanLy_ShopConCung\\QuanLy_ShopConCung\\wwwroot\\images\\logo-01 (Custom).png",
+      "PackagePath": "staticwebassets\\images\\logo-01 (Custom).png"
+    },
+    {
       "Id": "E:\\QuanLy_ShopConCung\\QuanLy_ShopConCung\\wwwroot\\images\\logo-01.png",
       "PackagePath": "staticwebassets\\images\\logo-01.png"
     },

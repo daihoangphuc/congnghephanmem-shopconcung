@@ -265,6 +265,90 @@ namespace QuanLy_ShopConCung.Data.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("QuanLy_ShopConCung.Models.Customers", b =>
+                {
+                    b.Property<string>("CustomerId")
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)")
+                        .HasColumnName("CustomerId");
+
+                    b.Property<string>("CustomerCity")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("CustomerCity");
+
+                    b.Property<string>("CustomerGender")
+                        .HasMaxLength(5)
+                        .HasColumnType("nvarchar(5)")
+                        .HasColumnName("CustomerGender");
+
+                    b.Property<string>("CustomerName")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("CustomerName");
+
+                    b.Property<string>("CustomerPhone")
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)")
+                        .HasColumnName("CustomerPhone");
+
+                    b.HasKey("CustomerId");
+
+                    b.ToTable("Customers");
+                });
+
+            modelBuilder.Entity("QuanLy_ShopConCung.Models.Orders", b =>
+                {
+                    b.Property<string>("OrderId")
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)")
+                        .HasColumnName("OrderId");
+
+                    b.Property<string>("CustomerId")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)")
+                        .HasColumnName("CustomerId");
+
+                    b.Property<string>("OderStatus")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("OderStatus");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("OrderDate");
+
+                    b.Property<int>("Price")
+                        .HasColumnType("int")
+                        .HasColumnName("Price");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int")
+                        .HasColumnName("ProductId");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int")
+                        .HasColumnName("Quantity");
+
+                    b.Property<string>("StaffId")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)")
+                        .HasColumnName("StaffId");
+
+                    b.HasKey("OrderId");
+
+                    b.HasIndex("CustomerId");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("StaffId");
+
+                    b.ToTable("Orders");
+                });
+
             modelBuilder.Entity("QuanLy_ShopConCung.Models.Product", b =>
                 {
                     b.Property<int>("ProductId")
@@ -327,6 +411,38 @@ namespace QuanLy_ShopConCung.Data.Migrations
                     b.HasKey("SizeId");
 
                     b.ToTable("Sizes");
+                });
+
+            modelBuilder.Entity("QuanLy_ShopConCung.Models.Staffs", b =>
+                {
+                    b.Property<string>("StaffId")
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)")
+                        .HasColumnName("StaffId");
+
+                    b.Property<string>("StaffGender")
+                        .HasMaxLength(5)
+                        .HasColumnType("nvarchar(5)")
+                        .HasColumnName("StaffGender");
+
+                    b.Property<string>("StaffName")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("StaffName");
+
+                    b.Property<string>("StaffPhone")
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)")
+                        .HasColumnName("StaffPhone");
+
+                    b.Property<string>("StaffRole")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("StaffRole");
+
+                    b.HasKey("StaffId");
+
+                    b.ToTable("Staffs");
                 });
 
             modelBuilder.Entity("QuanLy_ShopConCung.Models.User", b =>
@@ -406,6 +522,33 @@ namespace QuanLy_ShopConCung.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("QuanLy_ShopConCung.Models.Orders", b =>
+                {
+                    b.HasOne("QuanLy_ShopConCung.Models.Customers", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("QuanLy_ShopConCung.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("QuanLy_ShopConCung.Models.Staffs", "Staff")
+                        .WithMany()
+                        .HasForeignKey("StaffId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+
+                    b.Navigation("Product");
+
+                    b.Navigation("Staff");
                 });
 
             modelBuilder.Entity("QuanLy_ShopConCung.Models.Product", b =>

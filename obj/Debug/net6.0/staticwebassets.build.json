@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "i9vTQtG/eKbOXq5ZLu9yH8Va/dGEmroo6DcQEkyE4Z8=",
+  "Hash": "enwMRK0Hp5ndpt/EXUWuFof1/tzmAjoJ63oJwqV+eDg=",
   "Source": "QuanLy_ShopConCung",
   "BasePath": "_content/QuanLy_ShopConCung",
   "Mode": "Default",
@@ -14535,6 +14535,23 @@
       "OriginalItemSpec": "wwwroot\\images\\item-cart-05.jpg"
     },
     {
+      "Identity": "E:\\QuanLy_ShopConCung\\QuanLy_ShopConCung\\wwwroot\\images\\logo (Custom).png",
+      "SourceId": "QuanLy_ShopConCung",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\QuanLy_ShopConCung\\QuanLy_ShopConCung\\wwwroot\\",
+      "BasePath": "_content/QuanLy_ShopConCung",
+      "RelativePath": "images/logo (Custom).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo (Custom).png"
+    },
+    {
       "Identity": "E:\\QuanLy_ShopConCung\\QuanLy_ShopConCung\\wwwroot\\images\\logo.png",
       "SourceId": "QuanLy_ShopConCung",
       "SourceType": "Discovered",
@@ -14550,6 +14567,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
+    },
+    {
+      "Identity": "E:\\QuanLy_ShopConCung\\QuanLy_ShopConCung\\wwwroot\\images\\logo-01 (Custom).png",
+      "SourceId": "QuanLy_ShopConCung",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\QuanLy_ShopConCung\\QuanLy_ShopConCung\\wwwroot\\",
+      "BasePath": "_content/QuanLy_ShopConCung",
+      "RelativePath": "images/logo-01 (Custom).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo-01 (Custom).png"
     },
     {
       "Identity": "E:\\QuanLy_ShopConCung\\QuanLy_ShopConCung\\wwwroot\\images\\logo-01.png",
